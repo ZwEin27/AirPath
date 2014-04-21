@@ -19,6 +19,8 @@
     #import <Parse/Parse.h>
     #import "APUtility.h"
 
-    #import <NSLogger/NSLogger.h>
+#ifndef DEBUG
+#import <NSLogger/NSLogger.h>
+#endif
 
 #endif

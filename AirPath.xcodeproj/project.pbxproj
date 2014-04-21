@@ -70,6 +70,24 @@
 		1F988AB519050FA70028BBAA /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F988AB419050FA70028BBAA /* Accounts.framework */; };
 		1F988AB719050FBE0028BBAA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F988AB619050FBE0028BBAA /* CoreMedia.framework */; };
 		1F988AB919050FC50028BBAA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F988AB819050FC50028BBAA /* AVFoundation.framework */; };
+		1F988AC119055CC20028BBAA /* UserProfileSyn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F988AC019055CC20028BBAA /* UserProfileSyn.m */; };
+		1F988AC719055E840028BBAA /* UserProfileSynTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F988AC619055E840028BBAA /* UserProfileSynTests.m */; };
+		1F988ACB1905600E0028BBAA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F988ACA1905600E0028BBAA /* libPods.a */; };
+		1F988AD31905635A0028BBAA /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F988AD21905635A0028BBAA /* CoreAudio.framework */; };
+		1F988AD41905635F0028BBAA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4AEB0A1904C56E0004A71E /* CoreLocation.framework */; };
+		1F988AD5190563670028BBAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3DAF6B190351270061AAFA /* CoreGraphics.framework */; };
+		1F988AD61905636D0028BBAA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F988AB819050FC50028BBAA /* AVFoundation.framework */; };
+		1F988AD7190563770028BBAA /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F988AB419050FA70028BBAA /* Accounts.framework */; };
+		1F988AD81905637B0028BBAA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F988AB219050ECA0028BBAA /* Social.framework */; };
+		1F988AD9190563880028BBAA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F988AB019050DB70028BBAA /* libz.dylib */; };
+		1F988ADA1905638B0028BBAA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4AEB1A1904C5C30004A71E /* CFNetwork.framework */; };
+		1F988ADB190563960028BBAA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4AEB251904F3EE0004A71E /* AssetsLibrary.framework */; };
+		1F988ADC190563A00028BBAA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4AEB181904C5BC0004A71E /* SystemConfiguration.framework */; };
+		1F988ADD190563A60028BBAA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4AEB161904C5B20004A71E /* MobileCoreServices.framework */; };
+		1F988ADE190563B10028BBAA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4AEB141904C5A70004A71E /* AudioToolbox.framework */; };
+		1F988ADF190563B70028BBAA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4AEB121904C59D0004A71E /* Security.framework */; };
+		1F988AE0190563C20028BBAA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4AEB0C1904C57A0004A71E /* StoreKit.framework */; };
+		1F988AE1190563CC0028BBAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4AEB0E1904C5870004A71E /* QuartzCore.framework */; };
 		6F0CC9FC5D7744D79190F3C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0031E612DF164016ACD11C1B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -162,6 +180,15 @@
 		1F988AB419050FA70028BBAA /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		1F988AB619050FBE0028BBAA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		1F988AB819050FC50028BBAA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1F988ABF19055CC20028BBAA /* UserProfileSyn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileSyn.h; sourceTree = "<group>"; };
+		1F988AC019055CC20028BBAA /* UserProfileSyn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileSyn.m; sourceTree = "<group>"; };
+		1F988AC619055E840028BBAA /* UserProfileSynTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileSynTests.m; sourceTree = "<group>"; };
+		1F988AC8190560010028BBAA /* libPods-NSLogger.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-NSLogger.a"; path = "Pods/build/Debug-iphoneos/libPods-NSLogger.a"; sourceTree = "<group>"; };
+		1F988ACA1905600E0028BBAA /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		1F988ACC190560120028BBAA /* libPods-MBProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-MBProgressHUD.a"; path = "Pods/build/Debug-iphoneos/libPods-MBProgressHUD.a"; sourceTree = "<group>"; };
+		1F988ACE190562CE0028BBAA /* libPods-NSLogger.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-NSLogger.a"; path = "Pods/build/Debug-iphoneos/libPods-NSLogger.a"; sourceTree = "<group>"; };
+		1F988AD0190562D30028BBAA /* libPods-MBProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-MBProgressHUD.a"; path = "Pods/build/Debug-iphoneos/libPods-MBProgressHUD.a"; sourceTree = "<group>"; };
+		1F988AD21905635A0028BBAA /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		1FBDFA221903D81C00031083 /* APUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APUtility.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,10 +224,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F988AE1190563CC0028BBAA /* QuartzCore.framework in Frameworks */,
+				1F988AE0190563C20028BBAA /* StoreKit.framework in Frameworks */,
+				1F988ADF190563B70028BBAA /* Security.framework in Frameworks */,
+				1F988ADE190563B10028BBAA /* AudioToolbox.framework in Frameworks */,
+				1F988ADD190563A60028BBAA /* MobileCoreServices.framework in Frameworks */,
+				1F988ADC190563A00028BBAA /* SystemConfiguration.framework in Frameworks */,
+				1F988ADB190563960028BBAA /* AssetsLibrary.framework in Frameworks */,
+				1F988ADA1905638B0028BBAA /* CFNetwork.framework in Frameworks */,
+				1F988AD9190563880028BBAA /* libz.dylib in Frameworks */,
+				1F988AD81905637B0028BBAA /* Social.framework in Frameworks */,
+				1F988AD7190563770028BBAA /* Accounts.framework in Frameworks */,
+				1F988AD61905636D0028BBAA /* AVFoundation.framework in Frameworks */,
+				1F988AD5190563670028BBAA /* CoreGraphics.framework in Frameworks */,
+				1F988AD41905635F0028BBAA /* CoreLocation.framework in Frameworks */,
+				1F988AD31905635A0028BBAA /* CoreAudio.framework in Frameworks */,
+				1F3DAF8B190351270061AAFA /* CoreData.framework in Frameworks */,
+				1F988ACB1905600E0028BBAA /* libPods.a in Frameworks */,
 				1F4AEB3D1904FAA00004A71E /* Parse.framework in Frameworks */,
 				1F4AEB381904F85F0004A71E /* libOCMock.a in Frameworks */,
 				1F3DAF88190351270061AAFA /* XCTest.framework in Frameworks */,
-				1F3DAF8B190351270061AAFA /* CoreData.framework in Frameworks */,
 				1F3DAF8A190351270061AAFA /* UIKit.framework in Frameworks */,
 				1F3DAF89190351270061AAFA /* Foundation.framework in Frameworks */,
 			);
@@ -247,6 +290,12 @@
 		1F3DAF68190351270061AAFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F988AD21905635A0028BBAA /* CoreAudio.framework */,
+				1F988AD0190562D30028BBAA /* libPods-MBProgressHUD.a */,
+				1F988ACE190562CE0028BBAA /* libPods-NSLogger.a */,
+				1F988ACC190560120028BBAA /* libPods-MBProgressHUD.a */,
+				1F988ACA1905600E0028BBAA /* libPods.a */,
+				1F988AC8190560010028BBAA /* libPods-NSLogger.a */,
 				1F988AB819050FC50028BBAA /* AVFoundation.framework */,
 				1F988AB619050FBE0028BBAA /* CoreMedia.framework */,
 				1F988AB419050FA70028BBAA /* Accounts.framework */,
@@ -277,6 +326,10 @@
 		1F3DAF71190351270061AAFA /* AirPath */ = {
 			isa = PBXGroup;
 			children = (
+				1F988ABC19055B2B0028BBAA /* Domain */,
+				1F988ABB19055AFE0028BBAA /* Core */,
+				1F988ABE19055C360028BBAA /* Network */,
+				1F988ABD19055B310028BBAA /* Database */,
 				1F3DAFA719035FCB0061AAFA /* Configuration */,
 				1F3DAFA119035F000061AAFA /* Storyboards */,
 				1F3DAF9E19035EDC0061AAFA /* Models */,
@@ -307,6 +360,10 @@
 		1F3DAF8E190351270061AAFA /* AirPathTests */ = {
 			isa = PBXGroup;
 			children = (
+				1F988AC319055E590028BBAA /* Domain Tests */,
+				1F988AC419055E5D0028BBAA /* Core Tests */,
+				1F988AC219055E4F0028BBAA /* Network Tests */,
+				1F988AC519055E660028BBAA /* Database Tests */,
 				1F73013319049158003170EB /* Parse Tests */,
 				1F7301321904914E003170EB /* Media Tests */,
 				1F3DAF94190351270061AAFA /* AirPathTests.m */,
@@ -541,6 +598,65 @@
 			path = "AirPath/Open Source/ICETurorial";
 			sourceTree = "<group>";
 		};
+		1F988ABB19055AFE0028BBAA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		1F988ABC19055B2B0028BBAA /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		1F988ABD19055B310028BBAA /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		1F988ABE19055C360028BBAA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1F988ABF19055CC20028BBAA /* UserProfileSyn.h */,
+				1F988AC019055CC20028BBAA /* UserProfileSyn.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		1F988AC219055E4F0028BBAA /* Network Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1F988AC619055E840028BBAA /* UserProfileSynTests.m */,
+			);
+			name = "Network Tests";
+			sourceTree = "<group>";
+		};
+		1F988AC319055E590028BBAA /* Domain Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Domain Tests";
+			sourceTree = "<group>";
+		};
+		1F988AC419055E5D0028BBAA /* Core Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Core Tests";
+			sourceTree = "<group>";
+		};
+		1F988AC519055E660028BBAA /* Database Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Database Tests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -724,6 +840,7 @@
 				1F3DAF7C190351270061AAFA /* AirPathAppDelegate.m in Sources */,
 				1F3DAF78190351270061AAFA /* main.m in Sources */,
 				1F4AEB241904F31C0004A71E /* AlbumUtility.m in Sources */,
+				1F988AC119055CC20028BBAA /* UserProfileSyn.m in Sources */,
 				1F91D589190504DA00FA3F16 /* ICETutorialController.m in Sources */,
 				1F988AAF19050D4C0028BBAA /* FBMissingSymbols.m in Sources */,
 				1F91D58A190504DA00FA3F16 /* ICETutorialPage.m in Sources */,
@@ -737,6 +854,7 @@
 			files = (
 				1F3DAF95190351270061AAFA /* AirPathTests.m in Sources */,
 				1F4AEB2D1904F6500004A71E /* AlbumTests.m in Sources */,
+				1F988AC719055E840028BBAA /* UserProfileSynTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
