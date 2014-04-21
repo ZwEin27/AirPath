@@ -10,8 +10,11 @@
 
 #import "AirPathAppDelegate.h"
 
+
 int main(int argc, char * argv[])
 {
+    //LoggerStartForBuildUser();
+    
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AirPathAppDelegate class]));
     }

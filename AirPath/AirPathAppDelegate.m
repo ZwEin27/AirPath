@@ -25,6 +25,10 @@
     [Parse setApplicationId:Parse_AplicationId
                   clientKey:Parse_ClientKey];
     
+    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
+     UIRemoteNotificationTypeAlert|
+     UIRemoteNotificationTypeSound];
+    
     // Set default ACLs
     PFACL *defaultACL = [PFACL ACL];
     [defaultACL setPublicReadAccess:YES];
@@ -32,16 +36,22 @@
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 
+    // Override point for customization after application launch.
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
     
-    if ([PFUser currentUser]) { //Had login
-        NSLog(@"User had login");
-    }else { //Need login, to welcome page
-        NSLog(@"User need login");
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"WelcomeStoryboard" bundle:nil];
-        WelcomeViewController *welcomeViewController = [storyboard instantiateViewControllerWithIdentifier:@"welcomeViewController"];
-        [welcomeViewController loadDefaultSettings];
-        self.window.rootViewController = welcomeViewController;
-    }
+    //LoggerApp(1, @"Hello world! Today is: %@", @"Monday!");
+    
+    //LogMessageCompat(@"TestCompat");
+    
+//    if ([PFUser currentUser]) { //Had login
+//        NSLog(@"User had login");
+//    }else { //Need login, to welcome page
+//        NSLog(@"User need login");
+//        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"WelcomeStoryboard" bundle:nil];
+//        WelcomeViewController *welcomeViewController = [storyboard instantiateViewControllerWithIdentifier:@"welcomeViewController"];
+//        [welcomeViewController loadDefaultSettings];
+//        self.window.rootViewController = welcomeViewController;
+//    }
     
     
     
@@ -175,5 +185,21 @@
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
+
+#pragma mark - Parse Configuration
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application
+didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
+}
+
 
 @end
